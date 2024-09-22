@@ -21,7 +21,7 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "supplier_id")
-    private SupplierInfo supplierId;
+    private SupplierInfo supplier;
 
     private int stockQuantity;
 
@@ -29,8 +29,9 @@ public class Product {
 
     private float mrp;
 
-    private float buyingConst;
+    private float buyingCost;
 
     private Date latestStockDate;
 
+    private int predefinedQuantity;
 }

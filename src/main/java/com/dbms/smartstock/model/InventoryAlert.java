@@ -14,13 +14,14 @@ public class InventoryAlert {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    private Product productId;
+    private Product product;
 
     @ManyToOne
     @JoinColumn(name = "supplier_Id")
-    private SupplierInfo supplierId;
+    private SupplierInfo supplier;
 
     private int quantityOfOrder;
 
+    @Enumerated(EnumType.STRING)
     private AlertType alertType;
 }
