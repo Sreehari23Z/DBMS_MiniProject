@@ -1,0 +1,19 @@
+services:
+  postgres:
+    container_name: smartStock_postgres
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=smartStock'
+      - 'POSTGRES_PASSWORD=userpw'
+      - 'POSTGRES_USER=user'
+    ports:
+      - '5432:5432'
+  pgadmin:
+    container_name: smartStock_pgadmin
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@localhost.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 5050
+    ports:
+      - '5050:5050'
