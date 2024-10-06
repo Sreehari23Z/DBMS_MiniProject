@@ -1,0 +1,12 @@
+:root {
+  --black: rgba(49, 49, 68, 1);
+  --white: rgba(255, 255, 255, 1);
+  --bluesgray-2: rgba(184, 187, 194, 1);
+  --bluesgray-3: rgba(225, 226, 229, 1);
+  --drop-menu-menu-font-family: "Poppins", Helvetica;
+  --drop-menu-menu-font-weight: 500;
+  --drop-menu-menu-font-size: 12px;
+  --drop-menu-menu-letter-spacing: 0.36px;
+  --drop-menu-menu-line-height: 18px;
+  --drop-menu-menu-font-style: normal;
+}
