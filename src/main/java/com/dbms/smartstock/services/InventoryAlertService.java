@@ -21,6 +21,10 @@ public class InventoryAlertService {
     @Autowired
     private ProductRepository productRepository;
 
+    public List<InventoryAlert> getAlerts(){
+        return alertRepository.findAll();
+    }
+
     @Scheduled(cron = "${inventory.update.cron}")
     public void updateInventoryAlert(){
         System.out.println("Checking inventory update");
